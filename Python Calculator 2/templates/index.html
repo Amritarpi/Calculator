@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <form method="POST">
+      <label for="num1">First Number:</label>
+      <input type="number" name="num1" id="num1"><br>
+
+      <label for="num2">Second Number:</label>
+      <input type="number" name="num2" id="num2"><br>
+
+      <input type="radio" name="operation" value="add" checked> Add<br>
+      <input type="radio" name="operation" value="subtract"> Subtract<br>
+      <input type="radio" name="operation" value="multiply"> Multiply<br>
+      <input type="radio" name="operation" value="divide"> Divide<br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    {% if result %}
+    <h2>Result: {{ result }}</h2>
+    {% endif %}
+  </body>
+</html>

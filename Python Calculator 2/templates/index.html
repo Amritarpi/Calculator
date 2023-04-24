@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculator</title>
+    <title>Calculator</title> <!--title of webpage -->
   </head>
   <body>
     <h1>Calculator</h1>
@@ -20,8 +20,8 @@
       <input type="submit" value="Submit">
     </form>
 
-    {% if result %}
-    <h2>Result: {{ result }}</h2>
-    {% endif %}
+    {% if result %} <!-- jinja template syntax which checks if the result variable has a value -->
+    <h2>Result: {{ result }}</h2> <!--displays the result variable value if it exists -->
+    {% endif %} <!--syntax which marks the end of the if statement -->
   </body>
 </html>
